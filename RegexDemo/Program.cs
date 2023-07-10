@@ -12,6 +12,7 @@ namespace RegexDemo
         {
             MyRegex myregex = new MyRegex();
             myregex.Check();
+            myregex.FirstName("Hemant");
 
         }
     }
