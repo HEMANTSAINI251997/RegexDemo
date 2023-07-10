@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace RegexDemo
 {
@@ -28,6 +29,18 @@ namespace RegexDemo
         {
             string myname = "^[A-Z][a-z]{3,}$"; // 1 word is Capital after than small words and should get more than 3 word
             if (Regex.IsMatch(name, myname))
+            {
+                Console.WriteLine("STRING IS MATCH");
+            }
+            else
+            {
+                Console.WriteLine("String is NOT Match");
+            }
+        }
+        public void LastName(string name)
+        {
+            string lastname = "^[A-Z][a-z]{3,}$";
+            if (Regex.IsMatch(name, lastname))
             {
                 Console.WriteLine("STRING IS MATCH");
             }
